@@ -170,7 +170,7 @@ void MainWnd::OnPaint( HDC hDc )
     DataManager *datamgr = engine->GetDataManager();
     if( !datamgr->DataValid() )
     {
-        this->PaintDataInfo( hDc, TEXT( "GameTimer" ), TEXT( "No data" ) );
+        this->PaintDataInfo( hDc, TEXT( "欢迎使用SD::GameTimer" ), TEXT( "拖放.sdgtj文件以加载数据" ) );
         return;
     }
 
