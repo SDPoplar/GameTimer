@@ -60,7 +60,8 @@ namespace SeaDrip
 
                 bool DataValid( void );
 
-                bool LoadDataByFileName( std::wstring fileName );
+                bool LoadDataByFileName( std::string fileName, std::wstring &errMsg );
+                bool LoadDataByFileName( std::wstring fileName, std::wstring &errMsg );
                 void ResetCurrentData( void );
 
                 std::wstring GetDataAuthor( void );

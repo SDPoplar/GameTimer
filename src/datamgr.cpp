@@ -66,13 +66,25 @@ void DataManager::ResetCurrentData( void )
     }
 }
 
-bool DataManager::LoadDataByFileName( std::wstring fileName )
+bool DataManager::LoadDataByFileName( std::string fileName, std::wstring &errMsg )
+{
+    size_t pos;
+    while( ( pos = fileName.find( "\"" ) ) != std::string::npos )
+    {
+        fileName = fileName.replace( pos, 1, "" );
+    }
+    std::wstring wsName = StrToWStr( fileName );
+    return this->LoadDataByFileName( wsName, errMsg );
+}
+
+bool DataManager::LoadDataByFileName( std::wstring fileName, std::wstring &errMsg )
 {
     this->ClearList();
 
     std::ifstream f( fileName, std::ios::in );
     if( !f )
     {
+        errMsg = TEXT( "打开文件失败，请检查文件是否存在" );
         return false;
     }
     
@@ -107,6 +119,7 @@ bool DataManager::LoadDataByFileName( std::wstring fileName )
     }
     catch( ... )
     {
+        errMsg = TEXT( "解析文件失败，文件可能已损坏" );
         return false;
     }
 }

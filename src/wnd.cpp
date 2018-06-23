@@ -72,6 +72,7 @@ std::wstring LoadFirstDropFile( HDROP files )
 LRESULT CALLBACK GameTimerWndProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam )
 {
     GameTimer *engine = GameTimer::GetInstance();
+    std::wstring errMsg;
     switch( msg )
     {
         case WM_QUIT:
@@ -90,9 +91,9 @@ LRESULT CALLBACK GameTimerWndProc( HWND hWnd, UINT msg, WPARAM wParam, LPARAM lP
         case WM_PAINT:
             return PaintWnd( engine->GetWindow() );
         case WM_DROPFILES:
-            if( !engine->GetDataManager()->LoadDataByFileName( LoadFirstDropFile( ( HDROP )wParam ) ) )
+            if( !engine->GetDataManager()->LoadDataByFileName( LoadFirstDropFile( ( HDROP )wParam ), errMsg ) )
             {
-                MessageBox( hWnd, TEXT( "无效的数据文件" ), TEXT( "载入文件失败" ), MB_OK );
+                MessageBox( hWnd, errMsg.c_str(), TEXT( "载入文件失败" ), MB_OK );
             }
             SetWindowText( hWnd, engine->GetDataManager()->GetDataName().c_str() );
             engine->GetWindow()->MarkWindowNeedRedraw();
