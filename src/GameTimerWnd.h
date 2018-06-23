@@ -30,7 +30,7 @@ namespace SeaDrip
                 */
                 void PaintDataInfo( HDC hDc, std::wstring dataName, std::wstring author );
 
-                void PaintSeconds( HDC hDc, const int &nSeconds );
+                void PaintSeconds( HDC hDc, const int &nStarted, const int &nSeconds );
                 void PaintCurrentSkillName( HDC hDc, const std::wstring &skillName );
                 void PaintCurrentSkillComment( HDC hDc, const std::wstring &skillComment );
                 //  void PaintComingSkills( HDC hDc,  );

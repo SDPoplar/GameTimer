@@ -196,7 +196,7 @@ void MainWnd::OnPaint( HDC hDc )
     {
         return;
     }
-    this->PaintSeconds( hDc, cs->SecondsDiff( delay ) );
+    this->PaintSeconds( hDc, delay, cs->SecondsDiff( delay ) );
     this->PaintCurrentSkillName( hDc, cs->GetItemName() );
     this->PaintCurrentSkillComment( hDc, cs->GetComment() );
 }
@@ -267,7 +267,7 @@ void MainWnd::PaintDataInfo( HDC hDc, std::wstring dataName, std::wstring author
     DeleteObject( font );
 }
 
-void MainWnd::PaintSeconds( HDC hDc, const int &nSecond )
+void MainWnd::PaintSeconds( HDC hDc, const int &nStarted, const int &nSecond )
 {
     SetBkMode( hDc, TRANSPARENT );
 
@@ -283,7 +283,7 @@ void MainWnd::PaintSeconds( HDC hDc, const int &nSecond )
     brush = ( HBRUSH )SelectObject( hDc, oldBrush );
     DeleteObject( brush );
 
-    wchar_t s[ 8 ];
+    wchar_t s[ 16 ] = { 0 };
     swprintf_s( s, TEXT( "%d" ), nSecond );
     COLORREF c = RGB( 255, 255, 255 );
     if( nSecond < 5 )
@@ -297,10 +297,30 @@ void MainWnd::PaintSeconds( HDC hDc, const int &nSecond )
     SetTextColor( hDc, c );
     RECT rect;
     rect.left = 0;
-    rect.bottom = 60;
-    rect.top = 20;
+    rect.bottom = 50;
+    rect.top = 10;
     rect.right = 80;
-    HFONT font = CreateWndDefFont( 18, 36 ), oldFont;
+    HFONT font = CreateWndDefFont( 16, 32 ), oldFont;
+    oldFont = ( HFONT )SelectObject( hDc, font );
+    DrawText( hDc, s, -1, &rect, DT_CENTER );
+    font = ( HFONT )SelectObject( hDc, oldFont );
+    DeleteObject( font );
+
+    if( nStarted < 0 )
+    {
+        swprintf_s( s, TEXT( "¼´½«¿ªÊ¼" ) );
+    }
+    else
+    {
+        swprintf_s( s, TEXT( "%02d:%02d" ), nStarted / 60, nStarted % 60 );
+    }
+
+    SetTextColor( hDc, RGB( 255, 255, 255 ) );
+    rect.left = 0;
+    rect.bottom = 70;
+    rect.top = 50;
+    rect.right = 80;
+    font = CreateWndDefFont( 8, 16 );
     oldFont = ( HFONT )SelectObject( hDc, font );
     DrawText( hDc, s, -1, &rect, DT_CENTER );
     font = ( HFONT )SelectObject( hDc, oldFont );
