@@ -1,0 +1,9 @@
+﻿  core.cpp
+  datamgr.cpp
+e:\c\gametimer\datamgr.cpp(12): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\c\gametimer\datamgr.cpp(146): warning C4244: “初始化”: 从“time_t”转换到“unsigned int”，可能丢失数据
+e:\c\gametimer\datamgr.cpp(147): warning C4244: “return”: 从“time_t”转换到“int”，可能丢失数据
+  main.cpp
+  wnd.cpp
+  正在生成代码...
+  GameTimer.vcxproj -> E:\C\GameTimer\x64\Debug\GameTimer.exe
