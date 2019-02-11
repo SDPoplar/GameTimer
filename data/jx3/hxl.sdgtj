@@ -1,0 +1,93 @@
+{
+	"title": "荒血路",
+	"author": "白獠@鹅满侠",
+	"list": [{
+		"name": "铂尔",
+		"comment": "1T两奶7DPS",
+		"points": [{
+			"delay": 19,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 34,
+			"name": "火焰掌",
+			"comment": "点名两个人出人群"
+		}, {
+			"delay": 47,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 53,
+			"name": "旋转火刀",
+			"comment": "沙包肤摇, 近战远离"
+		}, {
+			"delay": 82,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 87,
+			"name": "火焰掌",
+			"comment": "点名两个人出人群"
+		}, {
+			"delay": 96,
+			"name": "信仰奉献",
+			"comment": "踩白圈"
+		}, {
+			"delay": 120,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 131,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 136,
+			"name": "旋转火刀",
+			"comment": "沙包肤摇, 近战远离"
+		}, {
+			"delay": 155,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 170,
+			"name": "火焰掌",
+			"comment": "点名两个人出人群"
+		}, {
+			"delay": 183,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 189,
+			"name": "旋转火刀",
+			"comment": "沙包肤摇, 近战远离"
+		}, {
+			"delay": 218,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 223,
+			"name": "火焰掌",
+			"comment": "点名两个,只喊一个出人群"
+		}, {
+			"delay": 232,
+			"name": "神罚",
+			"comment": "红10尺, 黄15尺"
+		}, {
+			"delay": 277,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 292,
+			"name": "火焰掌",
+			"comment": "点名两个人出人群"
+		}, {
+			"delay": 302,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 317,
+			"name": "旋转火刀",
+			"comment": "沙包肤摇, 近战远离"
+		}]
+	}]
+}
