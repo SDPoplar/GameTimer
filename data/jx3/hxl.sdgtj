@@ -2,6 +2,50 @@
 	"title": "荒血路",
 	"author": "白獠@鹅满侠",
 	"list": [{
+		"name": "康疑",
+		"comment": "1T两奶7DPS",
+		"points": [{
+			"delay": 73,
+			"name": "四分天下",
+			"comment": "T消BUFF，DPS躲面向"
+		}, {
+			"delay": 158,
+			"name": "四分天下",
+			"comment": "T消BUFF，DPS躲面向"
+		}, {
+			"delay": 199,
+			"name": "猎魂曲",
+			"comment": "鲜血不动深海动，烈日点名出人群"
+		}, {
+			"delay": 215,
+			"name": "猎魂曲",
+			"comment": "鲜血不动深海动，烈日点名出人群"
+		}, {
+			"delay": 231,
+			"name": "猎魂曲",
+			"comment": "鲜血不动深海动，烈日点名出人群"
+		}, {
+			"delay": 320,
+			"name": "四分天下",
+			"comment": "T消BUFF，DPS躲面向"
+		}, {
+			"delay": 405,
+			"name": "四分天下",
+			"comment": "T消BUFF，DPS躲面向"
+		}, {
+			"delay": 446,
+			"name": "猎魂曲",
+			"comment": "鲜血不动深海动，烈日点名出人群"
+		}, {
+			"delay": 462,
+			"name": "猎魂曲",
+			"comment": "鲜血不动深海动，烈日点名出人群"
+		}, {
+			"delay": 478,
+			"name": "猎魂曲",
+			"comment": "鲜血不动深海动，烈日点名出人群"
+		}]
+	}, {
 		"name": "铂尔",
 		"comment": "1T两奶7DPS",
 		"points": [{
@@ -88,6 +132,78 @@
 			"delay": 317,
 			"name": "旋转火刀",
 			"comment": "沙包肤摇, 近战远离"
+		}]
+	}, {
+		"name": "罗纳真",
+		"comment": "1T两奶7DPS",
+		"points": [{
+			"delay": 29,
+			"name": "燃石",
+			"comment": "安排人去搬"
+		}, {
+			"delay": 32,
+			"name": "火网",
+			"comment": "DPS转火打掉"
+		}, {
+			"delay": 71,
+			"name": "火网",
+			"comment": "DPS转火打掉"
+		}, {
+			"delay": 103,
+			"name": "火网",
+			"comment": "DPS转火打掉"
+		}, {
+			"delay": 125,
+			"name": "信仰之火",
+			"comment": "找火柱躲在阴影里"
+		}, {
+			"delay": 167,
+			"name": "火柱消失",
+			"comment": "回点打BOSS，背对小太阳，准备火网"
+		}, {
+			"delay": 169,
+			"name": "火网",
+			"comment": "DPS转火打掉"
+		}, {
+			"delay": 201,
+			"name": "太阳消失，同时火网",
+			"comment": "DPS转掉火网，恢复起手站位"
+		}, {
+			"delay": 131,
+			"name": "落焰刀",
+			"comment": "躲圈"
+		}, {
+			"delay": 230,
+			"name": "燃石",
+			"comment": "视BOSS血量决定是否去搬，准备火网"
+		}, {
+			"delay": 232,
+			"name": "火网",
+			"comment": "DPS转火打掉"
+		}, {
+			"delay": 278,
+			"name": "火网",
+			"comment": "DPS转火打掉"
+		}, {
+			"delay": 315,
+			"name": "火网",
+			"comment": "DPS转火打掉"
+		}, {
+			"delay": 326,
+			"name": "信仰之火",
+			"comment": "找火柱躲在阴影里"
+		}, {
+			"delay": 368,
+			"name": "火柱消失",
+			"comment": "回点打BOSS，背对小太阳，准备火网"
+		}, {
+			"delay": 370,
+			"name": "火网",
+			"comment": "DPS转火打掉"
+		}, {
+			"delay": 404,
+			"name": "火网",
+			"comment": "DPS转火打掉，然后恢复起手站位"
 		}]
 	}]
 }
